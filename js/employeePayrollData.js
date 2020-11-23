@@ -53,7 +53,7 @@ class EmployeePayrollData
     {
         let currentDate= new Date();
         //checking if start date is not a future date
-        if(currentDate- startDate>=0)
+        if(currentDate.getTime()- startDate.getTime()>=0)
             this._startDate= startDate;
         else throw  'invalid date';
     }
